@@ -1,6 +1,6 @@
 import struct
 
-# 4️⃣ Transport Layer (Adds sequencing, error handling)
+# Transport Layer (Adds sequencing, error handling)
 class TransportLayer:
     def send_data(self, data):
         print("[Transport Layer] Adding sequence number")

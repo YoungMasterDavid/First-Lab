@@ -1,6 +1,6 @@
 from hashlib import sha256  # For simple encryption
 
-# 3️⃣ Session Layer (Manages sessions, connections)
+# Session Layer (Manages sessions, connections)
 class SessionLayer:
     def send_data(self, data):
         print("[Session Layer] Creating session ID and adding handshake")
