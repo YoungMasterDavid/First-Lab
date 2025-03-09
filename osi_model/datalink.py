@@ -2,7 +2,6 @@
 class DataLinkLayer:
     def send_data(self, data, mac="AA:BB:CC:DD:EE:FF"):
         print("[Data Link Layer] Adding MAC header")
-        print("[Data Link Layer] Adding MAC header")
         mac_bytes = mac.encode()  # Convert MAC address to bytes
         return mac_bytes + b":" + data  # ✅ Keep everything in bytes
 
@@ -18,5 +17,5 @@ class DataLinkLayer:
         mac_header = data[:mac_end_index]  # Extract MAC (for debugging)
         remaining_data = data[mac_end_index + 1:]  # Remove MAC
 
-        print(f"[DEBUG] MAC Header: {mac_header}, Remaining Data: {remaining_data}")
+        # print(f"[DEBUG] MAC Header: {mac_header}, Remaining Data: {remaining_data}")
         return remaining_data
