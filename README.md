@@ -1,7 +1,7 @@
 # OSI Model Simulation in Python
 
 ## Description
-This project simulates the **OSI Model** using Python. It implements all 7 layers and simulates data transmission.
+This project simulates the **OSI Model** using Python. It implements all 7 layers and simulates data transmission. This does not connect to other devices because I didn't have any other device to try to connect to. Therefore, I only made this to open two terminals at the same time. First with the receiving and the second for the sending.
 
 ## Installation
 1. Clone the repository:

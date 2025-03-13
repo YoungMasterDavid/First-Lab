@@ -12,10 +12,10 @@ class PresentationLayer:
     def receive_data(self, data):
         print("[Presentation Layer] Decrypting, Decompressing, Decoding data")
         
-        # ✅ Ensure data is bytes before decoding
+        # Ensure data is bytes before decoding
         if isinstance(data, str):  
             data = data.encode()  # Convert str to bytes if needed
 
-        compressed = base64.b64decode(data)  # ✅ Remove .encode()
+        compressed = base64.b64decode(data)  # Remove .encode()
         decompressed = zlib.decompress(compressed)
-        return decompressed.decode()  # ✅ Convert back to string
+        return decompressed.decode()  # Convert back to string
